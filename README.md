@@ -11,10 +11,22 @@
   <img alt="GitHub license" src="https://img.shields.io/github/license/HarukaYamamoto0/utility-bot?color=informational">
 </div>
 
-### Prerequisites
+### Adjustments and improvements
+
+The project is still under development and the next updates will focus on the following tasks:
+
+- [x] create the base
+- [ ] create commands
+- [ ] make a good file architecture
+- [ ] change environment variables by Infiscal
+- [ ] create more basic commands
+- [ ] create tests with vitest
+- [ ] improve readme.md
+
+## 💻 Prerequisites
 Before starting you need to have these tools installed: [Git](https://git-scm.com/) and [Nodejs](https://nodejs.org/en/), it is recommended that you use a good code editor like [VSCode](https://code.visualstudio.com/).
 
-### 🎲 Running the application
+## 🎲 Running the application
 
 ```bash
 # Clone this repository
@@ -26,3 +38,7 @@ $ yarn
 # Run the application
 $ yarn start
 ```
+
+## 📝 License
+
+This project is under license. See the [LICENSE](LICENSE) file for more details.
