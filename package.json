@@ -1,11 +1,11 @@
 {
   "name": "utility-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "just a personal bot nothing mail no man",
-  "main": "index.js",
+  "main": "src/main.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/main.js"
   },
   "dependencies": {
     "discord.js": "^14.6.0",

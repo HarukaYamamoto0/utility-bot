@@ -16,7 +16,7 @@
 The project is still under development and the next updates will focus on the following tasks:
 
 - [x] create the base
-- [ ] create commands
+- [x] create commands
 - [ ] make a good file architecture
 - [ ] change environment variables by Infiscal
 - [ ] create more basic commands
@@ -24,6 +24,7 @@ The project is still under development and the next updates will focus on the fo
 - [ ] improve readme.md
 
 ## 💻 Prerequisites
+
 Before starting you need to have these tools installed: [Git](https://git-scm.com/) and [Nodejs](https://nodejs.org/en/), it is recommended that you use a good code editor like [VSCode](https://code.visualstudio.com/).
 
 ## 🎲 Running the application
@@ -35,10 +36,12 @@ $ git clone https://github.com/HarukaYamamoto0/utility-bot.git
 $ cd utility-bot
 # Install the dependencies
 $ yarn
+# rename the config.example.json file to config.json and populate it
+$ mv config.example.json config.json
 # Run the application
 $ yarn start
 ```
 
 ## 📝 License
 
-This project is under license. See the [LICENSE](LICENSE) file for more details.
+This project is under license. See the [LICENSE](LICENSE.md) file for more details.
