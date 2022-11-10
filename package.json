@@ -1,0 +1,17 @@
+{
+  "name": "utility-bot",
+  "version": "1.0.0",
+  "description": "just a personal bot nothing mail no man",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {},
+  "author": "HarukaYamamoto0 <antonioalbert344@gmail.com>",
+  "license": "MIT"
+}
