@@ -17,7 +17,7 @@ The project is still under development and the next updates will focus on the fo
 
 - [x] create the base
 - [x] create commands
-- [ ] make a good file architecture
+- [x] make a good file architecture
 - [ ] change environment variables by Infiscal
 - [ ] create more basic commands
 - [ ] create tests with vitest

@@ -8,8 +8,9 @@
     "start": "node src/main.js"
   },
   "dependencies": {
+    "@zafriel/dotenvforjson": "^1.0.2",
     "discord.js": "^14.6.0",
-    "dotenv": "^16.0.3"
+    "express": "^4.18.2"
   },
   "devDependencies": {},
   "author": "HarukaYamamoto0 <antonioalbert344@gmail.com>",
