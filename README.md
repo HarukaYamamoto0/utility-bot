@@ -18,14 +18,17 @@ The project is still under development and the next updates will focus on the fo
 - [x] create the base
 - [x] create commands
 - [x] make a good file architecture
-- [ ] change environment variables by Infiscal
+- [x] change environment variables by Infisical
 - [ ] create more basic commands
 - [ ] create tests with vitest
 - [ ] improve readme.md
 
 ## 💻 Prerequisites
 
-Before starting you need to have these tools installed: [Git](https://git-scm.com/) and [Nodejs](https://nodejs.org/en/), it is recommended that you use a good code editor like [VSCode](https://code.visualstudio.com/).
+ - [Git](https://git-scm.com/)
+ - [Nodejs](https://nodejs.org/en/)
+ - A text editor (For example [VSCode](https://code.visualstudio.com/))
+ - An [Infisical](https://infisical.com/) account
 
 ## 🎲 Running the application
 
@@ -36,11 +39,10 @@ $ git clone https://github.com/HarukaYamamoto0/utility-bot.git
 $ cd utility-bot
 # Install the dependencies
 $ yarn
-# rename the config.example.json file to config.json and populate it
-$ mv config.example.json config.json
 # Run the application
-$ yarn start
+$ yarn dev
 ```
+As soon as the app is launched for the first time, Infisical will ask you to log into your account and it will also ask you for your project ID, it will only happen once, so don't worry.
 
 ## 📝 License
 

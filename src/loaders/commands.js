@@ -1,6 +1,5 @@
 import { Collection, REST, Routes } from "discord.js";
 import { readdirSync } from "fs";
-import loadJson from "@zafriel/dotenvforjson";
 
 async function loadCommands(client) {
   client.commands = new Collection();
@@ -8,7 +7,6 @@ async function loadCommands(client) {
 
   const pathToCommands = new URL("../commands/", import.meta.url);
   const fileNames = await readdirSync(pathToCommands);
-  await loadJson();
 
   for (const fileName of fileNames) {
     const { default: Command } = await import(`${pathToCommands}/${fileName}`);
