@@ -1,20 +1,15 @@
 export default async function interactionCreate(client, interaction) {
   if (!interaction.isChatInputCommand()) return;
 
-  const command = interaction.client.commands.get(interaction.commandName);
-
-  if (!command) {
-    console.error(`No command matching ${interaction.commandName} was found.`);
-    return;
-  }
+  const command = client.commands.get(interaction.commandName);
+  if (!command)
+    return interaction.reply(
+      `The **${interaction.commandName}** command is currently unavailable`
+    );
 
   try {
-    await command.execute(interaction);
+    await command.run(client, interaction);
   } catch (error) {
     console.error(error);
-    await interaction.reply({
-      content: "There was an error while executing this command!",
-      ephemeral: true,
-    });
   }
 }

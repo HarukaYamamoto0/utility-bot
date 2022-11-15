@@ -19,16 +19,18 @@ The project is still under development and the next updates will focus on the fo
 - [x] create commands
 - [x] make a good file architecture
 - [x] change environment variables by Infisical
-- [ ] create more basic commands
-- [ ] create tests with vitest
-- [ ] improve readme.md
+- [x] create more basic commands
+- [] create the useful commands for me
+
+## Project status
+This project has been completed
 
 ## 💻 Prerequisites
 
- - [Git](https://git-scm.com/)
- - [Nodejs](https://nodejs.org/en/)
- - A text editor (For example [VSCode](https://code.visualstudio.com/))
- - An [Infisical](https://infisical.com/) account
+- [Git](https://git-scm.com/)
+- [Nodejs](https://nodejs.org/en/)
+- A text editor (For example [VSCode](https://code.visualstudio.com/))
+- An [Infisical](https://infisical.com/) account
 
 ## 🎲 Running the application
 
@@ -42,6 +44,7 @@ $ yarn
 # Run the application
 $ yarn dev
 ```
+
 As soon as the app is launched for the first time, Infisical will ask you to log into your account and it will also ask you for your project ID, it will only happen once, so don't worry.
 
 ## 📝 License

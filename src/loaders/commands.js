@@ -6,30 +6,39 @@ async function loadCommands(client) {
   const allCommands = [];
 
   const pathToCommands = new URL("../commands/", import.meta.url);
-  const fileNames = await readdirSync(pathToCommands);
+  const categoryNames = await readdirSync(pathToCommands);
 
-  for (const fileName of fileNames) {
-    const { default: Command } = await import(`${pathToCommands}/${fileName}`);
-    const commandName = fileName.split(".")[0];
+  for (const category of categoryNames) {
+    const pathToCategory = new URL(category, pathToCommands.href);
+    const fileNames = await readdirSync(pathToCategory);
 
-    const command = new Command();
-    command.setName(commandName);
+    for (const fileName of fileNames) {
+      const { default: Command } = await import(
+        `${pathToCommands.href}${category}/${fileName}`
+      );
+      const commandName = fileName.split(".")[0];
 
-    allCommands.push(command.toJSON());
-    client.commands.set(command.name, command);
-  }
+      const command = new Command();
+      command.setName(commandName);
+      command.category = category;
 
-  const rest = new REST({ version: "10" }).setToken(process.env.tokenBot);
-  const data = await rest.put(
-    Routes.applicationCommands(process.env.clientId),
-    {
-      body: allCommands,
+      allCommands.push(command.toJSON());
+      client.commands.set(command.name, command);
     }
-  );
+}
+    const rest = new REST({ version: "10" }).setToken(process.env.tokenBot);
+    const data = await rest.put(
+      Routes.applicationCommands(process.env.clientId),
+      {
+        body: allCommands,
+      }
+    );
+    client.updatedCommands = data;
 
-  console.log(
-    `[COMMANDS] - ${data.length}/${allCommands.length} commands reloaded successfully`
-  );
+    console.log(
+      `[COMMANDS] - ${data.length}/${allCommands.length} commands reloaded successfully`
+    );
+  
 }
 
 export default loadCommands;
