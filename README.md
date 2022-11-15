@@ -11,7 +11,9 @@
   <img alt="GitHub license" src="https://img.shields.io/github/license/HarukaYamamoto0/utility-bot?color=informational">
 </div>
 
-### Adjustments and improvements
+<h5 align="center">🚧 This project is still under development 🚧</h5>
+
+## 🛠️ Adjustments and improvements
 
 The project is still under development and the next updates will focus on the following tasks:
 
@@ -20,10 +22,10 @@ The project is still under development and the next updates will focus on the fo
 - [x] make a good file architecture
 - [x] change environment variables by Infisical
 - [x] create more basic commands
-- [] create the useful commands for me
-
-## Project status
-This project has been completed
+- [ ] create the useful commands for me
+- [ ] add more settings like Babel and Eslint
+- [ ] Host the bot on the [Railway](https://railway.app/)
+- [ ] No plans for later
 
 ## 💻 Prerequisites
 
