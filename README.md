@@ -22,7 +22,7 @@ The project is still under development and the next updates will focus on the fo
 - [x] make a good file architecture
 - [x] change environment variables by Infisical
 - [x] create more basic commands
-- [ ] create the useful commands for me
+- [x] create the useful commands for me
 - [ ] add more settings like Babel and Eslint
 - [ ] Host the bot on the [Railway](https://railway.app/)
 - [ ] No plans for later

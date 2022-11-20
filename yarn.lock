@@ -283,9 +283,9 @@ destroy@1.2.0:
   integrity sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==
 
 discord-api-types@^0.37.12:
-  version "0.37.17"
-  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.37.17.tgz#314e4225fdff31b08b83ba5104d46564bc02303c"
-  integrity sha512-5ZIw1VtkmToBy8ziketjHkZnW1FoLevyXdK/TslNFLozijug2RnB3MyBNtSGzML1c72koU3neeGkvFZ8OiU0tQ==
+  version "0.37.18"
+  resolved "https://registry.yarnpkg.com/discord-api-types/-/discord-api-types-0.37.18.tgz#1f0ca95cea4b2380ba77623a62b1d285f1237d7a"
+  integrity sha512-mJ+9C8gmG5csssVZPH06Y8IGiJykljFyZc6n6F+T3vKo6yNBI5TtLIbwt6t9hJzsR5f1ITzRZ6cuPrTvRCUxqA==
 
 discord.js@^14.6.0:
   version "14.6.0"
@@ -501,9 +501,9 @@ ignore-by-default@^1.0.1:
   integrity sha512-Ius2VYcGNk7T90CppJqcIkS5ooHUZyIQK+ClZfMfMNFEF9VSE73Fq+906u/CWu92x4gzZMWOwfFYckPObzdEbA==
 
 infisical@^1.0.44:
-  version "1.0.44"
-  resolved "https://registry.yarnpkg.com/infisical/-/infisical-1.0.44.tgz#bc8e6954feb17910483d54208a7a9647c6463092"
-  integrity sha512-Bk+aotKmnofiVcuKY+waC7cQcIvdcgS0FhEDkbLlm6rpJtfQ+jHtCI/vShoEtzqw8QmnIX9i3fwnrNzgCgmRVA==
+  version "1.0.45"
+  resolved "https://registry.yarnpkg.com/infisical/-/infisical-1.0.45.tgz#87f914af2431489d98520ed9f6374d4db372c3d3"
+  integrity sha512-I92tBHM19agylNzaACX+qumb691LHDGh4pMyeFZtH+/tgVfeQqPe7Jri17Ijyn89gJP1bz2acsz5Nu9s7D2ETA==
   dependencies:
     axios "^0.27.2"
     jsrp "^0.2.4"
@@ -923,9 +923,9 @@ touch@^3.1.0:
     nopt "~1.0.10"
 
 ts-mixer@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/ts-mixer/-/ts-mixer-6.0.1.tgz#7c2627fb98047eb5f3c7f2fee39d1521d18fe87a"
-  integrity sha512-hvE+ZYXuINrx6Ei6D6hz+PTim0Uf++dYbK9FFifLNwQj+RwKquhQpn868yZsCtJYiclZF1u8l6WZxxKi+vv7Rg==
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/ts-mixer/-/ts-mixer-6.0.2.tgz#3e4e4bb8daffb24435f6980b15204cb5b287e016"
+  integrity sha512-zvHx3VM83m2WYCE8XL99uaM7mFwYSkjR2OZti98fabHrwkjsCvgwChda5xctein3xGOyaQhtTeDq/1H/GNvF3A==
 
 tslib@^2.4.0:
   version "2.4.1"
