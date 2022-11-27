@@ -7,16 +7,14 @@ class Eval extends BaseCommand {
     super();
     this.setDescription("sample my ping");
     this.addStringOption((option) =>
-      option
-        .setName("command")
-        .setDescription("the command to be executed")
-        .setRequired(true)
+      option.setName("command").setDescription("the command to be executed").setRequired(true)
     );
   }
 
   async execute(client, interaction) {
+    /* eslint-disable no-unused-vars */
     await interaction.deferReply();
-    
+
     const command = interaction.options.getString("command");
     const { user, member, guild, channel } = interaction;
 
@@ -25,10 +23,7 @@ class Eval extends BaseCommand {
 
     try {
       const evalResult = (resultType = eval(command));
-      const resultToString =
-        typeof evalResult !== "string"
-          ? inspect(evalResult, { depth: 0 })
-          : evalResult;
+      const resultToString = typeof evalResult !== "string" ? inspect(evalResult, { depth: 0 }) : evalResult;
       const cutResult = resultToString.slice(0, 1002);
 
       result = cutResult;

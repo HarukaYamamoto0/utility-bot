@@ -1,0 +1,28 @@
+name: Eslint and Prettier
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Installing Dependencies
+        run: yarn
+
+      - name: Check Linting
+        run: yarn lint
+
+      - name: Formatting Code
+        run: yarn format

@@ -5,10 +5,7 @@ class RenderLink extends BaseCommand {
     super();
     this.setDescription("render the links in your message");
     this.addStringOption((option) =>
-      option
-        .setName("message")
-        .setDescription("the message with links to be rendered")
-        .setRequired(true)
+      option.setName("message").setDescription("the message with links to be rendered").setRequired(true)
     );
   }
 

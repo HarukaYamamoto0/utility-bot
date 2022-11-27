@@ -4,18 +4,8 @@ class CreateLink extends BaseCommand {
   constructor() {
     super();
     this.setDescription("creates a rendered link");
-    this.addStringOption((option) =>
-      option
-        .setName("message")
-        .setDescription("the link message")
-        .setRequired(true)
-    );
-    this.addStringOption((option) =>
-      option
-        .setName("url")
-        .setDescription("the url of the message")
-        .setRequired(true)
-    );
+    this.addStringOption((option) => option.setName("message").setDescription("the link message").setRequired(true));
+    this.addStringOption((option) => option.setName("url").setDescription("the url of the message").setRequired(true));
   }
 
   async execute(client, interaction) {

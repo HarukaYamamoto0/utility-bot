@@ -1,5 +1,4 @@
 import { readdirSync } from "fs";
-import path from "path";
 
 async function loadEvents(client) {
   client._events = {};
@@ -12,9 +11,7 @@ async function loadEvents(client) {
     const fileNames = await readdirSync(new URL(folder, pathToEvents.href));
 
     for (const fileName of fileNames) {
-      const { default: event } = await import(
-        `${pathToEvents.href}${folder}/${fileName}`
-      );
+      const { default: event } = await import(`${pathToEvents.href}${folder}/${fileName}`);
       const eventName = fileName.split(".")[0];
       totalOfEvents++;
 
