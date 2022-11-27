@@ -23,8 +23,9 @@ The project is still under development and the next updates will focus on the fo
 - [x] change environment variables by Infisical
 - [x] create more basic commands
 - [x] create the useful commands for me
-- [ ] add more settings like Babel and Eslint
-- [ ] Host the bot on the [Railway](https://railway.app/)
+- [x] Host the bot on the [Railway](https://railway.app/)
+- [ ] Add actions for Eslint and Prettier
+- [ ] improve practically everything in the project (mainly the readme.md)
 - [ ] No plans for later
 
 ## 💻 Prerequisites

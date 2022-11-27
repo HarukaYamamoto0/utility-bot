@@ -500,10 +500,10 @@ ignore-by-default@^1.0.1:
   resolved "https://registry.yarnpkg.com/ignore-by-default/-/ignore-by-default-1.0.1.tgz#48ca6d72f6c6a3af00a9ad4ae6876be3889e2b09"
   integrity sha512-Ius2VYcGNk7T90CppJqcIkS5ooHUZyIQK+ClZfMfMNFEF9VSE73Fq+906u/CWu92x4gzZMWOwfFYckPObzdEbA==
 
-infisical@^1.0.44:
-  version "1.0.45"
-  resolved "https://registry.yarnpkg.com/infisical/-/infisical-1.0.45.tgz#87f914af2431489d98520ed9f6374d4db372c3d3"
-  integrity sha512-I92tBHM19agylNzaACX+qumb691LHDGh4pMyeFZtH+/tgVfeQqPe7Jri17Ijyn89gJP1bz2acsz5Nu9s7D2ETA==
+infisical@^1.0.46:
+  version "1.0.46"
+  resolved "https://registry.yarnpkg.com/infisical/-/infisical-1.0.46.tgz#42ce82887186d53658189b6eb5127db27574bc03"
+  integrity sha512-DW2uEk4r8lImI7wjeckScOy1EWURJ9kT6vWtdaSciuZtV+hDvt0L9hFcA0plBtUz5dLGpPi5H5pY0j/Kxjbq0A==
   dependencies:
     axios "^0.27.2"
     jsrp "^0.2.4"
