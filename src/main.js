@@ -6,9 +6,20 @@ import server from "./server.js";
   // create the client
   const client = new Client({ intents: 3276799 });
 
+
+
+
+
+
+
   await loaders.loadCommands(client);
   await loaders.loadEvents(client);
   await server(); // starts a web server
+
+
+
+
+
 
   // login to the bot
   client.login(process.env.tokenBot);
