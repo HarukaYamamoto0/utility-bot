@@ -1,4 +1,10 @@
-node_modules
+# Folders
+node_modules/
+configs/
+
+# Not used directly
+.eslintcache
+
+# Envs
 .env
 .env.infisical
-config.json
