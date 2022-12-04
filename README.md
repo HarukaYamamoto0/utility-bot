@@ -24,7 +24,7 @@ The project is still under development and the next updates will focus on the fo
 - [x] create more basic commands
 - [x] create the useful commands for me
 - [x] Host the bot on the [Railway](https://railway.app/)
-- [ ] Add actions for Eslint and Prettier
+- [x] Adding Eslint and Prettier along with the Husky
 - [ ] improve practically everything in the project (mainly the readme.md)
 - [ ] No plans for later
 

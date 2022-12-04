@@ -1,5 +1,5 @@
 import BaseCommand from "../../structures/command.js";
-import { EmbedBuilder, codeBlock } from "discord.js";
+import { codeBlock } from "discord.js";
 
 class GenerateJsonFromEmojis extends BaseCommand {
   constructor() {

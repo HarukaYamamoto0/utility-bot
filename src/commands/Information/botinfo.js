@@ -1,7 +1,4 @@
-import {
-  EmbedBuilder,
-  chatInputApplicationCommandMention,
-} from "discord.js";
+import { EmbedBuilder, chatInputApplicationCommandMention } from "discord.js";
 import BaseCommand from "../../structures/command.js";
 
 class Botinfo extends BaseCommand {
@@ -27,11 +24,7 @@ class Botinfo extends BaseCommand {
     }
 
     for (const category in categories) {
-      if (
-        category === "Owners" &&
-        !process.env.ownerIds.includes(interaction.user.id)
-      )
-        continue;
+      if (category === "Owners" && !process.env.ownerIds.includes(interaction.user.id)) continue;
       fields.push({
         name: `${category}: (${categories[category].length})`,
         value: categories[category].join(" - "),
@@ -40,12 +33,10 @@ class Botinfo extends BaseCommand {
 
     const clientName = client.user.username;
     const avatar = client.user.displayAvatarURL();
-    const owner = client.users.cache.get(
-      process.env.ownerIds.split(",")[0]
-    ).tag;
+    const owner = client.users.cache.get(process.env.ownerIds.split(",")[0]).tag;
 
     const description =
-      `Hello ${interaction.user}, my name is **${client.user.username}**, ` +
+      `Hello ${interaction.user}, my name is **${clientName}**, ` +
       `I'm just a personal bot, created by **${owner}**, ` +
       `my main focus is to help my creator, ` +
       `I have a total of **${allCommands.length}** commands`;

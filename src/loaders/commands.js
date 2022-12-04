@@ -1,4 +1,4 @@
-import { Collection, REST, Routes } from "discord.js";
+import { Collection } from "discord.js";
 import { readdirSync } from "fs";
 import updateSlashCommands from "../utils/updateSlashCommands.js";
 
@@ -14,9 +14,7 @@ async function loadCommands(client) {
     const fileNames = await readdirSync(pathToCategory);
 
     for (const fileName of fileNames) {
-      const { default: Command } = await import(
-        `${pathToCommands.href}${category}/${fileName}`
-      );
+      const { default: Command } = await import(`${pathToCommands.href}${category}/${fileName}`);
       const commandName = fileName.split(".")[0];
 
       const command = new Command();
@@ -31,9 +29,7 @@ async function loadCommands(client) {
   const data = await updateSlashCommands(client, allCommands);
   client.updatedCommands = data;
 
-  console.log(
-    `[COMMANDS] - ${data.length}/${allCommands.length} commands reloaded successfully`
-  );
+  console.log(`[COMMANDS] - ${data.length}/${allCommands.length} commands reloaded successfully`);
 }
 
 export default loadCommands;
