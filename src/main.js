@@ -1,10 +1,11 @@
 import { Client } from "discord.js";
+import botSettings from "./configs/bot.js";
 import loaders from "./loaders/index.js";
 import server from "./server.js";
 
 (async () => {
   // create the client
-  const client = new Client({ intents: 3276799 });
+  const client = new Client({ intents: botSettings.intents });
 
   await loaders.loadCommands(client);
   await loaders.loadEvents(client);
