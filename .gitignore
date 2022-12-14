@@ -1,7 +1,5 @@
 # Folders
 node_modules/
-src/configs/*.js
-!src/configs/*.example.js
 
 # Not used directly
 .eslintcache
