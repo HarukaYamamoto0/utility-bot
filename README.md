@@ -1,20 +1,14 @@
-<p align="center">
-  <a href="https://discord.com/oauth2/authorize?client_id=1040051324621967370&scope=bot&permissions=8">
-    <img src="https://imgur.com/HFENUgq.png" height="150"/>
-  </a>
-</p>
-
-<p align="center">just a personal bot nothing mail no man</>
 <div align="center">
+  <a href="https://discord.com/oauth2/authorize?client_id=1040051324621967370&scope=bot&permissions=8">
+    <img src="https://imgur.com/HFENUgq.png" height="150">
+  </a>
+  <p>Just a personal bot no big deal</p>
   <img alt="GitHub stars" src="https://img.shields.io/github/stars/HarukaYamamoto0/utility-bot?color=informational">
   <img alt="GitHub fork" src="https://img.shields.io/github/forks/HarukaYamamoto0/utility-bot?color=informational">
   <img alt="GitHub license" src="https://img.shields.io/github/license/HarukaYamamoto0/utility-bot?color=informational">
 </div>
 
-<h5 align="center">🚧 This project is still under development 🚧</h5>
-
 ## 🛠️ Adjustments and improvements
-
 The project is still under development and the next updates will focus on the following tasks:
 
 - [x] create the base
@@ -25,15 +19,15 @@ The project is still under development and the next updates will focus on the fo
 - [x] create the useful commands for me
 - [x] Host the bot on the [Railway](https://railway.app/)
 - [x] Adding Eslint and Prettier along with the Husky
-- [ ] improve practically everything in the project (mainly the readme.md)
-- [ ] No plans for later
+- [x] improve practically everything in the project (mainly the readme.md)
+- [x] No plans for later
 
 ## 💻 Prerequisites
 
 - [Git](https://git-scm.com/)
 - [Nodejs](https://nodejs.org/en/)
 - A text editor (For example [VSCode](https://code.visualstudio.com/))
-- An [Infisical](https://infisical.com/) account
+- An account at [Infisical](https://app.infisical.com/signup) (only in development)
 
 ## 🎲 Running the application
 
@@ -44,11 +38,10 @@ $ git clone https://github.com/HarukaYamamoto0/utility-bot.git
 $ cd utility-bot
 # Install the dependencies
 $ yarn
-# Run the application
+# Running the bot
 $ yarn dev
 ```
-
-As soon as the app is launched for the first time, Infisical will ask you to log into your account and it will also ask you for your project ID, it will only happen once, so don't worry.
+> On the first run, Infisical will ask you to log in with your account, and the project id, this will only happen once, so don't worry.
 
 ## 📝 License
 
